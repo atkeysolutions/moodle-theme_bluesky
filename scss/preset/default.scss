@@ -644,6 +644,8 @@ body,
                             vertical-align: middle !important;
 
                             &:before {
+                                display: inline-block;
+                                float: left;
                                 width: 60px;
                                 height: auto;
                                 margin-right: 1rem;
@@ -651,9 +653,12 @@ body,
 
                             &.fa-video-camera {
                                 &:before {
-                                    display: inline-block;
-                                    float: left;
                                     content: url("[[pix:theme|video]]");
+                                }
+                            }
+                            &.fa-link {
+                                &:before {
+                                    content: url("[[pix:url|icon]]");
                                 }
                             }
                         }
@@ -742,6 +747,33 @@ body,
                         content: "\f00d";
                         content: "\00d7";
                     }
+                }
+            }
+        }
+    }
+}
+
+#page-mod-bootstrapelements-mod {
+    .iconpicker-item {
+        &.label-success {
+            background-color: $gray-200;
+        }
+        .fa {
+            display: block;
+
+            &:before {
+                width: 30px;
+                height: auto;
+            }
+
+            &.fa-video-camera {
+                &:before {
+                    content: url("[[pix:theme|video]]");
+                }
+            }
+            &.fa-link {
+                &:before {
+                    content: url("[[pix:url|icon]]");
                 }
             }
         }
