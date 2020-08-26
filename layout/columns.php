@@ -61,5 +61,7 @@ $templatecontext = [
     'is_siteadmin' => is_siteadmin()
 ];
 
+$PAGE->requires->js_call_amd('theme_bluesky/blueskycustom', 'init');
+
 echo $OUTPUT->render_from_template('theme_bluesky/columns', $templatecontext);
 

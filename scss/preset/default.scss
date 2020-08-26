@@ -144,6 +144,9 @@ body,
         #page-mod-forum-search & {
             display: none;
         }
+        .editing & {
+            display: block;
+        }
     }
 
     @media (min-width: $max-page-width) {
@@ -588,6 +591,10 @@ body,
             }
             .sectionname {
                 font-size: $h4-font-size;
+
+                a {
+                    color: $body-color;
+                }
             }
             .activity {
                 padding: 0 0 1.5rem;
@@ -633,7 +640,7 @@ body,
 
                 img.activityicon {
                     width: 60px;
-                    height: 60px;
+                    height: auto;
                     margin-right: 1rem;
                     vertical-align: middle;
                 }
@@ -653,6 +660,7 @@ body,
 
                             &.fa-video-camera {
                                 &:before {
+                                    width: 60px;
                                     content: url("[[pix:theme|video]]");
                                 }
                             }
