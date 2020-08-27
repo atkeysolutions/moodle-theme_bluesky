@@ -5,9 +5,19 @@ define(['jquery'], function($) {
             $('.modal').on('hidden.bs.modal', function(t) {
                 var o = $(t.target).find('iframe');
                 o.each(function(t, o) {
-                    $(o).attr('src', $(o).attr('src'))
+                    $(o).attr('src', $(o).attr('src'));
                 });
                 $('video').trigger('pause');
+            });
+            $('.modal').on('shown.bs.modal', function(t) {
+                var o = $(t.target).find('iframe');
+                if(o.length > 0) {
+                  o.each(function(t, o) {
+                      $(o).attr('src', $(o).attr('src'));
+                  });
+                } else {
+                  $(t.target).find('video').first().trigger('play');
+                }
             });
         }
     };
