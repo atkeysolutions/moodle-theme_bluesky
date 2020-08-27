@@ -10,14 +10,7 @@ define(['jquery'], function($) {
                 $('video').trigger('pause');
             });
             $('.modal').on('shown.bs.modal', function(t) {
-                var o = $(t.target).find('iframe');
-                if(o.length > 0) {
-                  o.each(function(t, o) {
-                      $(o).attr('src', $(o).attr('src'));
-                  });
-                } else {
-                  $(t.target).find('video').first().trigger('play');
-                }
+              $(t.target).find('video').first().trigger('play');
             });
         }
     };
