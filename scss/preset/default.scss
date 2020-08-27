@@ -599,6 +599,18 @@ body,
             .activity {
                 padding: 0 0 1.5rem;
 
+                .contentafterlink {
+                    margin-top: -1.5em;
+                    margin-left: 75px;
+                    padding-right: 5%;
+                }
+
+                &.label {
+                    .mod-indent-outer {
+                        padding-left: 0;
+                    }
+                }
+
                 .actions {
                     position: absolute;
                     right: 0;
@@ -716,14 +728,23 @@ body,
             }
 
             .modal-body {
-                padding: 1.25rem;
+                padding: 1.25rem 1.25rem;
 
                 iframe {
+                    width: 100%;
                     margin: 0 auto;
+                }
+                .mediaplugin {
+                    margin: 0 auto;
+
+                    > div {
+                        max-width: 100% !important;
+                        margin: 0;
+                    }
                 }
             }
             .modal-header {
-                padding-bottom: 0;
+                padding: 1.25rem 1.25rem 0;
                 border: none;
                 border-radius: 1.25rem 1.25rem 0 0;
 
