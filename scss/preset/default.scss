@@ -136,6 +136,14 @@ body,
         width: 143px;
         height: 80px;
     }
+    .btn.leave {
+        svg {
+            margin-right: .15rem;
+            .a {
+                fill: $white !important;
+            }
+        }
+    }
     .usermenu {
         margin-right: 1rem;
 
@@ -375,8 +383,9 @@ body,
                 }
                 .breadcrumb-item {
                     &:first-of-type:before {
-                        content: "🡨";
+                        content: url([[pix:theme|arrow-left]]);
                         margin-right: .65rem;
+                        transform: scale(1.15);
                     }
                 }
 

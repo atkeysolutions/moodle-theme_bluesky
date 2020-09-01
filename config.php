@@ -44,8 +44,8 @@ $THEME->iconsystem = '\\theme_bluesky\\output\\icon_system_fontawesome';
 
 $THEME->sheets = [];
 
-$THEME->rarrow ="🡪";
-$THEME->larrow = "🡨";
+$THEME->rarrow =">";
+$THEME->larrow = "<";
 
 $THEME->layouts = [
     // Most backwards compatible layout without the blocks - this is the layout used by default.
