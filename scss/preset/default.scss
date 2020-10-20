@@ -594,6 +594,10 @@ body,
 
             .left {
                 display: none;
+
+                .editing & {
+                    display: block;
+                }
             }
             .summary {
                 margin-left: 0;
